@@ -13,6 +13,10 @@
       <th>task</th>
       <td>{{ $task->content }}</td>
     </tr>
+    <tr>
+      <th>status</th>
+      <td>{{ $task->status }}</td>
+    </tr>
   </table>
 
   {!! link_to_route('tasks.edit', 'edit', ['task' => $task->id], ['class' => 'btn btn-light']) !!}

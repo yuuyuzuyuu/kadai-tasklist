@@ -11,6 +11,10 @@
           {!! Form::label('content', 'task:') !!}
           {!! Form::text('content', null, ['class' => 'form-control']) !!}
         </div>
+        <div class="form-group">
+          {!! Form::label('status', 'status:') !!}
+          {!! Form::text('status', null, ['class' => 'form-control']) !!}
+        </div>
         {!! FOrm::submit('update', ['class' => 'btn btn-light']) !!}
       {!! Form::close() !!}
     </div>
