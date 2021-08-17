@@ -21,6 +21,7 @@
                     <ul class="navbar-nav mr-auto"></ul>
                     <ul class="navbar-nav">
                       <li class="nav-item">{!! link_to_route('tasks.create', 'new task', [], ['class' => 'nav-link']) !!}</li>
+                      <li class="nav-item">{!! link_to_route('signup.get', 'Sign up', [], ['class' => 'nav-link']) !!}</li>
                     </ul>
                 </div>
             </nav>
