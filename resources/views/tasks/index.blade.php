@@ -3,9 +3,8 @@
 @section('content')
 
   @if (Auth::check())
-  
+
     <h1>Task List</h1>
-    @if (count($tasks) > 0)
       <table class="table table-striped">
         <thead>
           <tr>
@@ -24,13 +23,12 @@
           @endforeach
         </tbody>
       </table>
-    @endif
     {!! link_to_route('tasks.create', 'new task', [], ['class' => 'btn btn-light']) !!}
-  
+
   @else
-  
+
     <h1 class="text-center">Welcome to Task List</h1>
-  
+
   @endif
-  
+
 @endsection
